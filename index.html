@@ -1,0 +1,696 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un día para ti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="site">
+
+  <!-- PANTALLA 1: CUMPLEAÑOS -->
+
+  <section class="screen active" id="home">
+
+    <div class="floating-star star-1">✦</div>
+    <div class="floating-star star-2">✧</div>
+    <div class="floating-star star-3">✦</div>
+    <div class="floating-star star-4">✧</div>
+    <div class="floating-star star-5">✦</div>
+
+    <div class="intro">
+
+      <div class="date-label">09 · 11 · 2003</div>
+
+      <h1>¡Feliz<br>cumpleaños!</h1>
+
+      <h2 class="subtitle">Hoy es tu día!</h2>
+
+      <p class="intro-text">
+        Y para celebrarlo he creado una web
+        <strong>únicamente sobre ti.</strong>
+      </p>
+
+      <div class="gift-area">
+
+<button class="gift-button" aria-label="Abrir regalo" onclick="window.openGift()">
+          <div class="gift">
+            <div class="gift-shadow"></div>
+            <div class="gift-box">
+              <div class="gift-ribbon-vertical"></div>
+            </div>
+            <div class="gift-lid">
+              <div class="gift-ribbon-horizontal"></div>
+            </div>
+            <div class="gift-bow">
+              <span class="bow-left"></span>
+              <span class="bow-right"></span>
+              <span class="bow-center"></span>
+            </div>
+            <span class="gift-sparkle sparkle-1">✦</span>
+            <span class="gift-sparkle sparkle-2">✧</span>
+            <span class="gift-sparkle sparkle-3">✦</span>
+          </div>
+        </button>
+
+        <div class="gift-instruction">
+          <span>✦</span> ABRE TU REGALO <span>✦</span>
+        </div>
+
+      </div>
+
+      <div class="little-note">
+        FELIZ CUMPLE MI AMOR. DISFRUTA!
+      </div>
+
+    </div>
+
+    <div class="bottom-decoration">✧  ✦  ✧</div>
+
+  </section>
+
+
+  <!-- PANTALLA 2: INTRODUCCIÓN -->
+
+  <section class="screen purple-screen" id="story-intro">
+
+    <div class="floating-star purple-star star-1">✦</div>
+    <div class="floating-star purple-star star-2">✧</div>
+    <div class="floating-star purple-star star-3">✦</div>
+    <div class="floating-star purple-star star-4">✧</div>
+
+    <div class="story-intro-content">
+
+      <div class="date-label light-date">
+        Un pequeño regalo para ti
+      </div>
+
+      <h2>Aunque la conozcas <br>mejor que yo...</h2>
+
+      <p class="story-description">
+        Pulsa para ver un recorrido de tu historia
+      </p>
+
+      <button class="m-button" onclick="openStory()" aria-label="Conocer tu historia">
+        <span>M</span>
+      </button>
+
+      <div class="m-instruction">
+        <span>↑</span> PULSA LA M <span>↑</span>
+      </div>
+
+    </div>
+
+    <div class="bottom-decoration light-bottom">✧  ✦  ✧</div>
+
+  </section>
+
+
+  <!-- PANTALLA 3: HISTORIA -->
+
+  <section class="screen story-screen" id="story">
+
+    <div class="floating-star story-star star-1">✦</div>
+    <div class="floating-star story-star star-2">✧</div>
+    <div class="floating-star story-star star-3">✦</div>
+
+    <div class="story-content">
+
+      <div class="date-label">CHAPTER ONE</div>
+
+      <h2>El comienzo<br>de todo.</h2>
+
+      <p>
+        Todo gran protagonista tiene una historia.
+        Y esta es la tuya.
+      </p>
+
+      <!-- CUNA SIN FOTOGRAFÍAS NI TEXTO -->
+
+      <div class="crib-button">
+        <div class="crib">
+          <div class="crib-canopy"></div>
+
+          <div class="crib-rails">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="crib-base"></div>
+          <div class="crib-leg left"></div>
+          <div class="crib-leg right"></div>
+        </div>
+      </div>
+
+      <button class="next-chapter-button" onclick="openChildhood()">
+        SIGUIENTE CAPÍTULO <span>→</span>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- PANTALLA 4: MARIO DE PEQUEÑO -->
+
+  <section class="screen childhood-screen" id="childhood">
+
+    <div class="floating-star story-star star-1">✦</div>
+    <div class="floating-star story-star star-2">✧</div>
+    <div class="floating-star story-star star-3">✦</div>
+
+    <div class="childhood-content">
+
+      <div class="date-label">CAPÍTULO DOS · MARIO PEQUEÑITO</div>
+
+      <h2>el pequeño<br>mario.</h2>
+
+      <p class="childhood-intro">
+        Antes de convertirse en quien es hoy,
+        hubo un niño que...
+      </p>
+
+      <!-- TEXTO SIN FOTOGRAFÍAS -->
+
+      <div class="childhood-text">
+
+        <p>
+          Mario era un niño muy risueño, aunque también algo
+          inquieto y torpe. Siempre tenía ganas de jugar,
+          descubrir cosas nuevas y aprender.
+        </p>
+
+        <p>
+          Tenía la cabeza supergrande y la lengua también,
+          así que le costaba un poquito hablar bien…
+          <strong>¡igual que ahora!</strong>
+        </p>
+
+      </div>
+
+      <button class="chapter-stamp" onclick="openChapterThree()">
+        CAPÍTULO 3 <span>→</span>
+      </button>
+
+    </div>
+
+    <div class="bottom-decoration">✧  ✦  ✧</div>
+
+  </section>
+
+
+  <!-- PANTALLA 5: DE LA NIÑEZ A LA ADULTEZ -->
+
+  <section class="screen chapter-three-screen" id="chapter-three">
+
+    <div class="floating-star star-1">✦</div>
+    <div class="floating-star star-2">✧</div>
+    <div class="floating-star star-3">✦</div>
+
+    <div class="chapter-three-content">
+
+      <div class="date-label">CAPÍTULO TRES</div>
+
+      <h2>De la niñez<br>a la edad adulta.</h2>
+
+      <p class="chapter-three-intro">
+        Los años pasaron y el pequeño Mario fue creciendo
+      </p>
+
+
+      <!-- ETAPA 1: EL INSTITUTO -->
+
+      <div class="life-stage">
+
+        <div class="stage-number">01</div>
+
+        <div class="stage-content">
+
+          <p class="stage-label">PRIMERA PARADA</p>
+
+          <h3>El cole y el instituto</h3>
+
+          <p>
+            Mario crecio y comezó una etapa llena de risas,tanto que Mario era el payaso de clase. Siempre tenía
+            algo que decir y alguna broma que hacer. También se iba siempre de aventuras aunque la mayoria fueran mas bien trastadas
+          .
+          </p>
+
+          <!-- INTERACCIÓN DEL PAYASO -->
+
+          <div class="clown-interaction">
+
+            <p class="interaction-title">UN PAYASO DE CUIDADO</p>
+
+            <p>Dicen que en clase no se podía estar tranquilo...</p>
+
+            <div class="clown-character" id="clownCharacter">
+
+              <div class="clown-hair hair-left"></div>
+              <div class="clown-hair hair-right"></div>
+
+              <div class="clown-face">
+
+                <div class="clown-eyebrow eyebrow-left"></div>
+                <div class="clown-eyebrow eyebrow-right"></div>
+
+                <div class="clown-eye eye-left"></div>
+                <div class="clown-eye eye-right"></div>
+
+                <div class="clown-cheek cheek-left"></div>
+                <div class="clown-cheek cheek-right"></div>
+
+                <div class="clown-nose" onclick="moveClownNose(event)"></div>
+
+                <div class="clown-mouth"></div>
+
+              </div>
+
+            </div>
+
+            <p id="clownMessage" class="clown-message">
+              ¡Pulsa la nariz si te atreves!
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ETAPA 2: ESAEM -->
+
+      <div class="life-stage esaem-stage">
+
+        <!-- OBJETOS FLOTANTES DE CINE -->
+
+        <div class="cinema-decoration">
+
+          <button type="button" class="floating-cinema cinema-1" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎬</button>
+          <button type="button" class="floating-cinema cinema-2" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎞️</button>
+          <button type="button" class="floating-cinema cinema-3" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎥</button>
+          <button type="button" class="floating-cinema cinema-4" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎟️</button>
+          <button type="button" class="floating-cinema cinema-5" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">📽️</button>
+          <button type="button" class="floating-cinema cinema-6" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">⭐</button>
+          <button type="button" class="floating-cinema cinema-7" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎬</button>
+          <button type="button" class="floating-cinema cinema-8" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎞️</button>
+          <button type="button" class="floating-cinema cinema-9" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎥</button>
+          <button type="button" class="floating-cinema cinema-10" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">✦</button>
+          <button type="button" class="floating-cinema cinema-11" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">🎟️</button>
+          <button type="button" class="floating-cinema cinema-12" onclick="moveCinemaObject(this)" aria-label="Objeto de cine">✧</button>
+
+        </div>
+
+        <div class="stage-number">02</div>
+
+        <div class="stage-content">
+
+          <p class="stage-label">SEGUNDA PARADA</p>
+
+          <h3>Luces, cámara... ¡ESAEM!</h3>
+
+          <p>
+            Después llegó ESAEM, donde empezó a explorar el mundo
+            de la interpretación, el arte, la música y el cine. Nuevas experiencias,
+            nuevos compañeros y muchas historias que contar.
+          </p>
+
+        </div>
+
+      </div>
+
+<!-- ETAPA 3: UNIVERSIDAD -->
+
+<div class="life-stage university-stage">
+
+  <div class="stage-number">03</div>
+
+  <div class="stage-content">
+
+    <p class="stage-label">TERCERA PARADA</p>
+
+    <h3>La universidad</h3>
+
+    <p>
+      Y finalmente llegó la universidad. Una nueva etapa,
+      llena de retos, trabajos, proyectos y muchas horas
+      intentando sacar adelante Comunicación Audiovisual.
+    </p>
+
+    <div class="university-interaction">
+
+      <p class="uni-secret-label">DOCUMENTO CLASIFICADO</p>
+
+      <button class="uni-open-button" onclick="openUniversityFile()">
+        🎓 VER EXPEDIENTE UNIVERSITARIO ↗
+      </button>
+
+      <div class="uni-file" id="uniFile">
+
+        <div class="uni-file-header">
+          <span>UNIVERSIDAD · EXPEDIENTE Nº 2003</span>
+          <span class="uni-confidential">TOP SECRET</span>
+        </div>
+
+        <h4>EL EXPEDIENTE DE MARIO</h4>
+
+        <p class="uni-file-subtitle">
+          Historial académico de un estudiante bastante particular.
+        </p>
+
+        <div class="uni-records">
+
+          <div class="uni-record">
+            <span>ASIGNATURA FAVORITA</span>
+            <strong>EL DESCANSO 💤</strong>
+          </div>
+
+          <div class="uni-record">
+            <span>HORAS GRABANDO Y EDITANDO</span>
+            <strong>MUCHÍSIMAS 🎬</strong>
+          </div>
+
+          <div class="uni-record">
+            <span>HORAS SALTÁNDOSE CLASES</span>
+            <strong>MÁS AÚN 🏃</strong>
+          </div>
+
+          <div class="uni-record">
+            <span>ASIGNATURAS SUPERADAS</span>
+            <strong>TODAS 🏆</strong>
+          </div>
+
+          <div class="uni-record">
+            <span>VIDEOCLIPS REALIZADOS</span>
+            <strong>1 🎥</strong>
+          </div>
+
+          <div class="uni-record">
+            <span>HORAS TRABAJADAS SIN COBRAR</span>
+            <strong>INFINITAS 💸</strong>
+          </div>
+
+        </div>
+
+        <div class="uni-file-footer">
+          <span>CALIFICACIÓN FINAL:</span>
+          <strong>UN AUTÉNTICO CRACK.</strong>
+        </div>
+
+        <p class="uni-file-stamp">APROBADO POR LA DIRECCIÓN</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+ 
+      <!-- FINAL DE LA HISTORIA -->
+
+      <div class="chapter-ending">
+
+        <h2 class="final-story-text">
+          Y por eso Mario es quien es ahora
+        </h2>
+
+        <button class="mario-final-photo" onclick="openMarioWorld()">
+          <span>DESCUBRE UN POCO MÁS DE MARIO ↗</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PANTALLA 6: COLLAGE DEL UNIVERSO DE MARIO -->
+
+  <section id="mario-world" class="screen mario-world-screen">
+
+    <div class="collage-header">
+
+      <p class="collage-kicker">EDICIÓN ESPECIAL · 09.11.2003</p>
+
+      <h1>LAS COSAS<br><span>QUE MARIO AMA.</span></h1>
+
+      <p class="collage-subtitle">
+        Un poquito de todo lo que te encanta y que te hace ser tú.
+      </p>
+
+      <span class="collage-sticker">100% MARIO</span>
+
+    </div>
+
+
+    <div class="mario-collage">
+
+      <!-- ONE PIECE -->
+
+      <button class="collage-piece onepiece-piece"
+              onclick="openCollageItem('onepiece')">
+
+        <span class="piece-label">01 / ANIME</span>
+        <span class="wanted-stamp">WANTED</span>
+        <span class="onepiece-art">☠️</span>
+        <span class="onepiece-title">ONE PIECE</span>
+        <span class="piece-caption">THE GRAND LINE</span>
+        <span class="piece-click">PULSA PARA DESCUBRIR ↗</span>
+
+      </button>
+
+
+      <!-- CAPI -->
+
+      <button class="collage-piece capi-piece"
+              onclick="openCollageItem('capi')">
+
+        <span class="tape tape-capi"></span>
+        <span class="piece-label">02 / TU PERRITO</span>
+
+        <span class="capi-photo">
+          <span>🐶</span>
+        </span>
+
+        <span class="capi-name">CAPI!</span>
+        <span class="handwritten">el jefe de la casa</span>
+
+      </button>
+
+
+      <!-- MÚSICA -->
+
+      <button class="collage-piece music-piece"
+              onclick="changeScreen('music')">
+
+        <span class="piece-label">03 / SOUNDTRACK</span>
+        <span class="music-headline">NOW<br>PLAYING</span>
+
+        <span class="music-names">
+          QUEVEDO · LUCHO RK<br>
+          LA PANTERA · ZAKYO
+        </span>
+
+        <span class="piece-click">ENTRAR EN SU MÚSICA ↗</span>
+
+      </button>
+
+
+      <!-- LA QUE SE AVECINA -->
+
+      <button class="collage-piece lqsa-piece"
+              onclick="openCollageItem('lqsa')">
+
+        <span class="piece-label">04 / SERIES</span>
+
+        <span class="tv-frame">
+          <span class="tv-screen">
+            <span class="tv-signal">LQSA</span>
+            <span class="tv-small-text">¿QUÉ PUEDE SALIR MAL?</span>
+          </span>
+        </span>
+
+        <span class="lqsa-title">LA QUE SE<br>AVECINA</span>
+
+      </button>
+
+
+      <!-- REAL MADRID -->
+
+      <button class="collage-piece madrid-piece"
+              onclick="openCollageItem('madrid')">
+
+        <span class="piece-label">05 / FÚTBOL</span>
+        <span class="madrid-ball">⚽</span>
+
+        <img
+          class="madrid-crest-image"
+          src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+          alt="Escudo del Real Madrid">
+
+        <span class="madrid-title">HALA<br>MADRID!</span>
+
+      </button>
+
+
+      <!-- MARVEL -->
+
+      <button class="collage-piece marvel-piece"
+              onclick="openCollageItem('marvel')">
+
+        <span class="piece-label">06 / COMICS</span>
+        <span class="marvel-logo">MARVEL</span>
+        <span class="marvel-heroes">🕷️ ⚡ 🛡️</span>
+        <span class="marvel-title">HEROES<br>NEVER REST.</span>
+        <span class="piece-click">DESCUBRIR ↗</span>
+
+      </button>
+
+
+      <!-- DECORACIÓN -->
+
+      <span class="collage-doodle doodle-one">✳</span>
+      <span class="collage-doodle doodle-two">✦</span>
+      <span class="collage-doodle doodle-three">★</span>
+
+      <span class="collage-note">
+        UNA COLECCIÓN<br>
+        DE SUS COSAS<br>
+        FAVORITAS.
+      </span>
+
+    </div>
+
+
+    <p class="collage-footer">CON AMOR · PARA MARIO</p>
+
+
+    <!-- VENTANA EMERGENTE DEL COLLAGE -->
+
+    <div class="collage-modal" id="collageModal">
+
+      <div class="collage-modal-card">
+
+        <button class="collage-modal-close"
+                onclick="closeCollageItem()"
+                aria-label="Cerrar">×</button>
+
+       
+
+        <div id="collageModalContent"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PANTALLA 7: MÚSICA -->
+
+  <section id="music" class="screen music-screen">
+
+    <div class="music-content">
+
+      <p class="eyebrow">EL UNIVERSO DE MARIO</p>
+
+      <h1>SU MÚSICA</h1>
+
+      <p class="music-intro">
+        Dale a un artista y descubre una de sus canciones.
+      </p>
+
+
+      <!-- QUEVEDO -->
+
+      <button class="artist-card" onclick="showRandomSong('quevedo', this)">
+
+        <img class="artist-photo" src="quevedo.jpg" alt="Quevedo">
+
+        <div class="artist-info">
+          <span class="artist-number">01</span>
+          <span class="artist-name">QUEVEDO</span>
+          <span class="artist-hint">Pulsa para descubrir ↗</span>
+          <span class="song-result"></span>
+        </div>
+
+      </button>
+
+
+      <!-- LUCHO RK -->
+
+      <button class="artist-card" onclick="showRandomSong('luchork', this)">
+
+        <img class="artist-photo" src="lucho-rk.jpg" alt="Lucho RK">
+
+        <div class="artist-info">
+          <span class="artist-number">02</span>
+          <span class="artist-name">LUCHO RK</span>
+          <span class="artist-hint">Pulsa para descubrir ↗</span>
+          <span class="song-result"></span>
+        </div>
+
+      </button>
+
+
+      <!-- LA PANTERA -->
+
+      <button class="artist-card" onclick="showRandomSong('lapantera', this)">
+
+        <img class="artist-photo" src="la-pantera.jpg" alt="La Pantera">
+
+        <div class="artist-info">
+          <span class="artist-number">03</span>
+          <span class="artist-name">LA PANTERA</span>
+          <span class="artist-hint">Pulsa para descubrir ↗</span>
+          <span class="song-result"></span>
+        </div>
+
+      </button>
+
+
+      <!-- ZAKYO -->
+
+      <button class="artist-card" onclick="showRandomSong('zakyo', this)">
+
+        <img class="artist-photo" src="zakyo.jpg" alt="Zakyo">
+
+        <div class="artist-info">
+          <span class="artist-number">04</span>
+          <span class="artist-name">ZAKYO</span>
+          <span class="artist-hint">Pulsa para descubrir ↗</span>
+          <span class="song-result"></span>
+        </div>
+
+      </button>
+
+
+      <button class="music-back" onclick="changeScreen('mario-world')">
+        ← VOLVER
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
